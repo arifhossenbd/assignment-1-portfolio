@@ -4,7 +4,7 @@
 
 :root {
     --main-color: rgb(13, 19, 33);
-    --secondary-color: rgb(255, 255, 255);
+    --secondary-color: rgb(219, 217, 217);
     --bg-color: rgb(255, 255, 255);
     --text-color: rgb(13, 19, 33);
     --transition: all .3s linear
@@ -38,6 +38,17 @@
     transition: var(--transition);
 }
 
+.card__btn {
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-decoration-line: underline;
+    text-decoration: underline;
+}
+
 .secondary__btn {
     border-radius: 8px;
 }
@@ -45,6 +56,18 @@
 .header__btn {
     background-color: var(--main-color);
     color: var(--secondary-color);
+}
+
+
+.section__container {
+    background-color: rgba(13, 19, 33, 0.02);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 2rem 0;
+    border-radius: 16px;
 }
 
 .title {
@@ -75,6 +98,23 @@
     letter-spacing: 0%;
     text-align: center;
     margin-bottom: 2rem;
+}
+
+
+.card__title {
+    color: var(--text-color);
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.card__desc {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 26px;
 }
 
 /* ============ Reuseable Elements Ends Here ================= */
@@ -119,21 +159,19 @@ nav {
 
 main {
     background-color: var(--bg-color);
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 1rem;
 }
 
 /* ======== Why Web Development Section Starts Here ======== */
 .why__section {
     background-color: rgba(13, 19, 33, 0.02);
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    padding: 4rem;
+    padding: 2rem;
     gap: 2rem;
-    margin: 0 1rem;
+    margin: 0 1rem; */
+    margin: 1rem;
+    padding: 2rem;
     border-radius: 16px;
 }
 
@@ -154,32 +192,15 @@ main {
 /* ======== Why Web Development Section Ends Here ======== */
 
 /* ======== My Inspiration Section Starts Here ======== */
-.inspiration {
-    background-color: rgba(13, 19, 33, 0.02);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 1rem;
-    border-radius: 16px;
-}
 
 .inspiration__video {
-    background-color: rgba(13, 19, 33, 0.02);
-    padding: 4rem;
-    margin: 0 1rem;
+    border: 2px dashed #ccc;
     border-radius: 16px;
 }
 
 /* ======== My Inspiration Section Ends Here ======== */
 
 /* ======== My Current Target Section Starts Here ======== */
-.target__section {
-    background-color: rgba(72, 82, 107, 0.02);
-    margin: 0 1rem;
-    border-radius: 16px;
-    padding: 4rem;
-}
 
 .card__box {
     display: flex;
@@ -190,7 +211,6 @@ main {
 }
 
 .card {
-    width: 380px;
     padding: 1rem;
     margin: 0 1rem;
     border: 1px solid var(--secondary-color);
@@ -205,34 +225,6 @@ main {
 
 .card img {
     width: 30%;
-}
-
-.card__title {
-    color: var(--text-color);
-    font-size: 24px;
-    font-weight: 800;
-    line-height: 36px;
-    letter-spacing: 0%;
-    text-align: left;
-    margin-bottom: 1rem;
-}
-
-.card__desc {
-    color: var(--text-color);
-    width: fit-content;
-    font-size: 16px;
-    line-height: 26px;
-}
-
-.card__btn {
-    color: var(--text-color);
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 19px;
-    letter-spacing: 0%;
-    text-align: left;
-    text-decoration-line: underline;
-    text-decoration: underline;
 }
 
 .card-1 {
@@ -253,6 +245,40 @@ main {
 /* ======== My Current Target Section Ends Here ======== */
 
 /* ======== My Next Target Section Starts Here ======== */
+.next__card__box{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 1rem;
+}
+
+.next__card{
+    background-color: var(--bg-color);
+    padding: 2rem;
+    margin: 0 1rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.next__card__img{
+    width: 100px;
+}
+
+.next__cart__content{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+
 /* ======== My Next Target Section Ends Here ======== */
 
 /* ======== Footer Section Starts Here ======== */
