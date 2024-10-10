@@ -47,7 +47,7 @@
     color: var(--secondary-color);
 }
 
-.title{
+.title {
     color: var(--text-color);
     font-size: 32px;
     font-weight: 800;
@@ -56,7 +56,8 @@
     text-align: center;
     margin-bottom: 2rem;
 }
-.subtitle{
+
+.subtitle {
     color: rgba(13, 19, 33, 0.7);
     font-size: 20px;
     font-weight: 600;
@@ -64,9 +65,10 @@
     letter-spacing: 0%;
     margin-bottom: 1rem;
 }
-.description{
+
+.description {
     color: var(--text-color);
-    width: 80%;
+    width: 70%;
     margin: auto;
     font-size: 16px;
     line-height: 26px;
@@ -78,12 +80,13 @@
 /* ============ Reuseable Elements Ends Here ================= */
 
 /* ============ Header Section Starts Here ================= */
-nav{
+nav {
     padding: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .logo {
     color: var(--text-color);
     font-size: 28px;
@@ -100,7 +103,8 @@ nav{
     justify-content: center;
     align-items: center;
 }
-.header__content{
+
+.header__content {
     display: flex;
     padding: 2rem 0;
     text-align: center;
@@ -110,9 +114,10 @@ nav{
     align-items: center;
     gap: 1rem;
 }
+
 /* ============ Header Section Ends Here ================= */
 
-main{
+main {
     background-color: var(--bg-color);
     padding: 2rem;
     display: flex;
@@ -122,7 +127,7 @@ main{
 }
 
 /* ======== Why Web Development Section Starts Here ======== */
-.why__section{
+.why__section {
     background-color: rgba(13, 19, 33, 0.02);
     display: flex;
     flex-direction: column;
@@ -131,23 +136,25 @@ main{
     margin: 0 1rem;
     border-radius: 16px;
 }
-.why__section__container{
+
+.why__section__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
 }
 
-.why__section__content{
+.why__section__content {
     width: 50%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
+
 /* ======== Why Web Development Section Ends Here ======== */
 
 /* ======== My Inspiration Section Starts Here ======== */
-.inspiration{
+.inspiration {
     background-color: rgba(13, 19, 33, 0.02);
     display: flex;
     flex-direction: column;
@@ -156,15 +163,93 @@ main{
     margin: 0 1rem;
     border-radius: 16px;
 }
-.inspiration__video{
+
+.inspiration__video {
     background-color: rgba(13, 19, 33, 0.02);
     padding: 4rem;
     margin: 0 1rem;
     border-radius: 16px;
 }
+
 /* ======== My Inspiration Section Ends Here ======== */
 
 /* ======== My Current Target Section Starts Here ======== */
+.target__section {
+    background-color: rgba(72, 82, 107, 0.02);
+    margin: 0 1rem;
+    border-radius: 16px;
+    padding: 4rem;
+}
+
+.card__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 1rem;
+}
+
+.card {
+    width: 380px;
+    padding: 1rem;
+    margin: 0 1rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transition: var(--transition);
+    cursor: pointer;
+
+}
+
+.card img {
+    width: 30%;
+}
+
+.card__title {
+    color: var(--text-color);
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.card__desc {
+    color: var(--text-color);
+    width: fit-content;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.card__btn {
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-decoration-line: underline;
+    text-decoration: underline;
+}
+
+.card-1 {
+    border-radius: 16px;
+    background: rgba(255, 76, 30, 0.05);
+}
+
+.card-2 {
+    border-radius: 16px;
+    background: rgba(0, 76, 232, 0.05)
+}
+
+.card-3 {
+    border-radius: 16px;
+    background: rgba(255, 223, 0, 0.05)
+}
+
 /* ======== My Current Target Section Ends Here ======== */
 
 /* ======== My Next Target Section Starts Here ======== */
