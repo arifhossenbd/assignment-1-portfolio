@@ -3,10 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --main-color: rgb(13, 19, 33);
     --secondary-color: rgb(219, 217, 217);
     --bg-color: rgb(255, 255, 255);
     --text-color: rgb(13, 19, 33);
+    --secondary-text-color: rgb(255, 255, 255);
     --transition: all .3s linear
 }
 
@@ -17,6 +17,7 @@
     text-decoration: none;
     border: 0;
     outline: 0;
+    list-style: none;
     box-sizing: border-box;
     font-family: "Azeret Mono", monospace;
 }
@@ -245,7 +246,7 @@ main {
 /* ======== My Current Target Section Ends Here ======== */
 
 /* ======== My Next Target Section Starts Here ======== */
-.next__card__box{
+.next__card__box {
     width: fit-content;
     display: flex;
     flex-direction: column;
@@ -254,7 +255,7 @@ main {
     margin: 0 1rem;
 }
 
-.next__card{
+.next__card {
     background-color: var(--bg-color);
     padding: 2rem;
     margin: 0 1rem;
@@ -268,18 +269,108 @@ main {
     cursor: pointer;
 }
 
-.next__card__img{
+.next__card__img {
     width: 100px;
 }
 
-.next__cart__content{
+.next__cart__content {
     display: flex;
     flex-direction: column;
     gap: .5rem;
 }
 
-
 /* ======== My Next Target Section Ends Here ======== */
 
+/* ======== Contact Section Starts Here ======== */
+.contacts__section {
+    background-image: url(assets/handshake.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+    margin: 0 4rem;
+    border-radius: 16px;
+}
+
+.contacts__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contacts__title {
+    color: var(--secondary-text-color);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0%;
+    margin-bottom: 1rem;
+}
+
+.contacts__desc {
+    width: 50%;
+    margin: auto;
+    color: var(--secondary-text-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form__container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contacts__input {
+    width: 548px;
+    height: 57px;
+    border: 1px solid rgba(13, 19, 33, 0.15);
+    border-radius: 8px;
+    background: var(--secondary-text-color);
+    padding: 20px 19px;
+}
+
+.contacts__btn {
+    width: 120px;
+    height: 57px;
+    padding: 17px 20px 17px 20px;
+    margin: 0px 16px;
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+/* ======== Contact Section Ends Here ======== */
+
+
 /* ======== Footer Section Starts Here ======== */
+footer {
+    border-radius: 16px;
+    background: rgba(13, 19, 33, 0.03);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 32px 150px 32px 150px;
+    margin-top: 3rem;
+}
+footer, ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 /* ======== Footer Section Ends Here ======== */
